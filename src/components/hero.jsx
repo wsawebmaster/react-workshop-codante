@@ -1,3 +1,5 @@
+import heroImage from './assets/hero.png';
+
 function Hero() {
   return (
     <section className="min-h-screen bg-gray-100 py-40 text-gray-700" id="hero">
@@ -18,7 +20,7 @@ function Hero() {
           </div>
           <div className="md:w-1/2 transform transition duration-300 hover:shadow-lg hover:shadow-emerald-200 hover:scale-105 cursor-pointer">
             <img
-              src="src/assets/hero.png"
+              src={heroImage}
               alt="Casa dos sonhos"
               className="rounded-lg shadow-lg w-full h-auto object-cover"
             />
