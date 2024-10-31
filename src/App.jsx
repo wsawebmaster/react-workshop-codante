@@ -11,7 +11,7 @@ const properties = [
     description: "Um belo apartamento moderno no centro da cidade",
     location: "Centro",
     price: 250000,
-    image: "src/assets/properties/1.png",
+    image: "/assets/properties/1.png",
     featured: true,
   },
   {
@@ -20,7 +20,7 @@ const properties = [
     description: "Vila luxuosa com vista deslumbrante para o oceano",
     location: "Área Costeira",
     price: 750000,
-    image: "src/assets/properties/2.png",
+    image: "/assets/properties/2.png",
     featured: true,
   },
   {
@@ -29,7 +29,7 @@ const properties = [
     description: "Espaçosa casa familiar com um grande quintal",
     location: "Interior",
     price: 450000,
-    image: "src/assets/properties/3.png",
+    image: "/assets/properties/3.png",
     featured: false,
   },
 ];
