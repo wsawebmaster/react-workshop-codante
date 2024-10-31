@@ -1,4 +1,9 @@
+import { useContext } from "react";
+import { PropertiesContext } from "../providers/property-provider";
+
 function Hero() {
+  const { setSearchText, searchText } = useContext(PropertiesContext);
+
   return (
     <section className="min-h-screen bg-gray-100 py-40 text-gray-700" id="hero">
       <div className="container mx-auto px-12">
@@ -10,11 +15,18 @@ function Hero() {
             <p className="text-xl mb-8">
               Descubra o imóvel perfeito com a ReactImóveis
             </p>
-            <button className="bg-emerald-400 hover:bg-emerald-300 text-white px-4 py-2 rounded-md">
+            {/* <button className="bg-emerald-400 hover:bg-emerald-300 text-white px-4 py-2 rounded-md">
               <a href="#imoveis">
                 Ver imóveis
               </a>
-            </button>
+            </button> */}
+            <input
+              type="text"
+              value={searchText}
+              onChange={(e) => setSearchText(e.target.value)}
+              placeholder="Pesquise um imóvel"
+              className="w-56 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-violet-400 focus:border-violet-400"
+            />
           </div>
           <div className="md:w-1/2 transform transition duration-300 hover:shadow-lg hover:shadow-emerald-200 hover:scale-105 cursor-pointer">
             <img
